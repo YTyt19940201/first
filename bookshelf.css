@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+header {
+    background-color: white;
+}
+#header {
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#logo {
+    display: inline-block;
+    margin-top: 10px;
+}
+header nav {
+    margin-top: 15px;
+}
+header nav a {
+    text-decoration: none;
+    color: #777;
+    font-size: 18px;
+}
+
+#cover {
+    color: white;
+    height: 300px;
+    background-image: url("./images/cover.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cover_title {
+    font-size: 36px;
+    letter-spacing: 10px;
+}
+
+.book_status {
+    display: inline-block;
+    text-align: center;
+}
+.book_status input {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.unread.active input {
+    background-color: rgb(255,169,180);
+}
+.reading.active input {
+    background-color: #219ed2;
+}
+.finished.active input {
+    background-color: #1ca40a;
+}
+.unread input:hover {
+    background-color: rgb(255,169,180);
+}
+.reading input:hover {
+    background-color: #219ed2;
+}
+.finished input:hover {
+    background-color: #1ca40a;
+}
+
+.book_count {
+    margin-top: 5px;
+}
+
+#cover .book_status input {
+    border: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 25px;
+    padding: 0;
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#book_list {
+    margin: 20px auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.book_item {
+    width: 270px;
+    margin: 15px;
+    background-color: white;
+    border: solid 1px #ddd;
+}
+
+.red-color{
+    background-color: rgba(255,169,180,0.8);
+}
+
+.blue-color{
+    background-color: #219ed2;
+}
+
+.green-color{
+    background-color: #1ca40a;
+}
+
+.book_item .book_image {
+    width: 270px;
+    height: 270px;
+    padding: 10px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.book_item .book_image img {
+    max-height: 250px;
+    max-width: 250px;
+    vertical-align: middle;
+}
+
+.book_item .book_detail {
+    padding: 10px;
+    background-color: #fafafa;
+    border-top: solid 1px #ddd;
+}
+
+.book_item .book_detail .book_title {
+    margin: 0 auto;
+    height: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.book_item .book_detail form {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.book_item .book_detail .book_status input {
+    border: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 4px;
+    padding: 0;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.book_delete {
+    margin-top: 5px;
+    text-align: right;
+}
+.book_delete input {
+    border: 0;
+    padding: 0;
+    background-color: white;
+    color: gray;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.book_delete img {
+    vertical-align: text-bottom;
+}
+
+.resistered-date, .update-time {
+    margin: 5px 0 0 0;
+    text-align: right;
+    color: gray;
+    font-size: 12px;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    color: gray;
+}
+
+.form_book {
+    width: 400px;
+    margin: 20px auto;
+}
+.form_book input {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    width: 400px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+.form_book .book_image {
+    margin-top: 5px;
+}
+.form_book .book_submit input {
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    background-color: #1ca40a;
+}
